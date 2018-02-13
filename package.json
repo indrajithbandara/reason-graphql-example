@@ -1,0 +1,31 @@
+{
+  "name": "reason-graphql-example",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "dev": "bsb -make-world -w & npm run watch",
+    "pretest": "npm run build",
+    "prestart": "npm run build",
+    "test": "jest",
+    "start": "nodemon ./lib/js/server/server.js"
+  },
+  "devDependencies": {
+    "bs-jest": "^0.3.2",
+    "bs-platform": "2.2.0",
+    "jest": "^19.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bs-apollo-server-express": "^0.3.1",
+    "bs-express": "^0.4.0",
+    "bs-graphql": "^0.3.1",
+    "bs-graphql-tools": "^0.3.1",
+    "bs-json": "^1.0.1",
+    "express": "^4.15.4",
+    "graphql": "^0.10.5",
+    "nodemon": "^1.14.12"
+  },
+  "license": "MIT"
+}

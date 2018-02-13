@@ -1,0 +1,27 @@
+{
+  "name": "reason-graphql-example",
+  "sources": [
+    "server",
+    {
+      "dir": "server/__tests__",
+      "type": "dev"
+    }
+  ],
+  "reason": {
+    "react-jsx": 2
+  },
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
+  "refmt": 3,
+  "bs-dependencies" : [
+    "bs-express",
+    "bs-graphql",
+    "bs-graphql-tools",
+    "bs-apollo-server-express",
+    "bs-json"
+  ],
+  "bs-dev-dependencies" : [
+    "bs-jest"
+  ]
+}
